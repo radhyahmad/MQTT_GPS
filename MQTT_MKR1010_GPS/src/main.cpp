@@ -26,8 +26,8 @@ void initialize_wifi();
 boolean reconnect();
 void update_data();
 
-const char ssid[] = "ceritechIoT";
-const char password[] = "ceritechkopi";
+const char ssid[] = "";
+const char password[] = "";
 
 WiFiClient net;
 PubSubClient mqttClient(net);
@@ -35,9 +35,9 @@ PubSubClient mqttClient(net);
 const char mqtt_broker[] = "w7b0b774.en.emqx.cloud";
 const char publish_topic[] = "v1/devices/me/telemetry";
 
-#define CLIENT_ID "mqttx_c2035c2a"
-#define USERNAME "ceri_12345"
-#define PASSWORD "CeriTech12345"
+#define CLIENT_ID ""
+#define USERNAME ""
+#define PASSWORD ""
 
 long lastReconnectAttempt = 0;
 
